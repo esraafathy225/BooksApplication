@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:id="@+id/img" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Hundred Years of Solitude"
+        android:textSize="13sp"
+        android:textColor="#000"
+        android:id="@+id/txt_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by Gabriel García Márquez"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:id="@+id/txt_author"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want to read"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3.5"
+            android:id="@+id/rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"></RatingBar>
+
+    </LinearLayout>
+<ImageView
+    android:layout_width="12dp"
+    android:layout_height="12dp"
+    android:id="@+id/clear"
+    android:layout_marginTop="7dp"
+    android:src="@drawable/clear"/>
+</LinearLayout>
